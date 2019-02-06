@@ -11,9 +11,6 @@ from sklearn.model_selection import train_test_split
 
 #######################################
 #### Normalization
-
-
-
 def feature_normalization(train, test):
     """Rescale the data so that each feature in the training set is in
     the interval [0,1], and apply the same transformations to the test
@@ -178,10 +175,7 @@ def regularized_grad_descent(X, y, alpha=0.1, lambda_reg=1, num_iter=1000):
     theta_hist = (np.arange(num_iter+1),theta)
     return theta_hist,loss_hist
 
-#############################################
-## Visualization of Regularized Batch Gradient Descent
-##X-axis: log(lambda_reg)
-##Y-axis: square_loss
+
 
 #############################################
 ### Stochastic Gradient Descent
@@ -210,13 +204,9 @@ def stochastic_grad_descent(X, y, alpha=0.1, lambda_reg=1, num_iter=1000):
 
     theta_hist = np.zeros((num_iter, num_instances, num_features))  #Initialize theta_hist
     loss_hist = np.zeros((num_iter, num_instances)) #Initialize loss_hist
-    #TODO
+    
 
-################################################
-### Visualization that compares the convergence speed of batch
-###and stochastic gradient descent for various approaches to step_size
-##X-axis: Step number (for gradient descent) or Epoch (for SGD)
-##Y-axis: log(objective_function_value) and/or objective_function_value
+
 
 def main():
     #Loading the dataset
@@ -234,7 +224,7 @@ def main():
     X_train = np.hstack((X_train, np.ones((X_train.shape[0], 1))))  # Add bias term
     X_test = np.hstack((X_test, np.ones((X_test.shape[0], 1)))) # Add bias term
 
-    # TODO
+    # add code to print necessary values here.
 
 if __name__ == "__main__":
     main()
