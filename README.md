@@ -1,7 +1,7 @@
 ## Linear Regression w/ Gradient Descent, Regularization
 This program shows how step by step Linear Regression happens with a break down of each step in different functions, followed by an implementation of Regular/Batch/Stochastic Gradient Descent. Here we use more than 2 variables, i.e., example of Multivariate Linear Regression.
 
-NOTE - While there are packages in Python that allow direct implementation of these algorithms, This is the mathematical break-down of the algorithm.
+NOTE - While there are packages in Python that allow direct implementation of these algorithms, This is the mathematical break-down of the algorithm. There is also a "Linear Regression Sci-Kit" uploaded that tackles the same algorithm but with the Boston Housing Data Set.
 
 #### Linear Regression
 In simple terms, it's (Supervised Learning) approach for predicting the next value given some data.
